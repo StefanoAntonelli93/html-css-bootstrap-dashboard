@@ -47,7 +47,7 @@
     </header>
     <div class="container-fluid d-flex ps-0 vh-100 gx-0">
         <!-- sidebar -->
-        <section class="sidebar bg-dark text-white p-3 d-none d-sm-block d-sm-none d-md-block">
+        <section class="sidebar bg-dark text-white p-3 d-none d-sm-block d-sm-none d-md-block flex-shrink-0">
             <div class="border-bottom border-secondary border-2 pb-3 fw-semibold">
                 <h3>Bootstrap Dashboard</h3>
             </div>
@@ -59,6 +59,21 @@
                 <li class="list-group-item bg-dark text-white border-0">An item</li>
                 <li class="list-group-item bg-dark text-white border-0">An item</li>
             </ul>
+              <!-- dropdown -->
+              <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle show pb-2" data-bs-toggle="dropdown" aria-expanded="true">
+                  <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                  <strong>SuperMario</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow show border-secondary" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(0px, -34px);" data-popper-placement="top-start">
+                  <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                  <li><a class="dropdown-item" href="#">Profilo</a></li>
+                 
+                  <li><hr class="dropdown-divider border-secondary"></li>
+                  <li><a class="dropdown-item" href="#">Esci</a></li>
+                </ul>
+              </div>
+            <!-- dropdown -->
         </section>
         <!-- //sidebar  -->
         <!-- form -->
