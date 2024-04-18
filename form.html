@@ -65,7 +65,7 @@
                   <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
                   <strong>SuperMario</strong>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow show border-secondary" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(0px, -34px);" data-popper-placement="top-start">
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow border-secondary" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate(0px, -34px);" data-popper-placement="top-start">
                   <li><a class="dropdown-item" href="#">Impostazioni</a></li>
                   <li><a class="dropdown-item" href="#">Profilo</a></li>
                  
@@ -77,48 +77,52 @@
         </section>
         <!-- //sidebar  -->
         <!-- form -->
-        <section class="content p-5 overflow-hidden overflow-y-auto">
-            <div class="container-fluid p-3 text-center w-100">
-                <h1 class="pb-2">title</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolorem dolorum excepturi, numquam provident voluptatem molestiae harum porro culpa impedit vitae ullam quibusdam natus cupiditate sit fuga consectetur autem quaerat?</p>
+        <section class="content overflow-hidden overflow-y-auto w-100">
+            <div class="container p-5 text-center">
+                <h1 class="pb-2">Crea nuovo prodotto</h1>
+                <p class="fs-4">I campi contrassegnati con un asterisco (*) sono obbligatori. Le immagini devono essere in formato PNG e non devono superare i 4 Mb di dimensione</p>
             </div>
-            <div class="container">
+            <div class="container-fluid px-4">
                 <div class="row row-cols-1 row-cols-lg-2">
                     <!-- form left -->
                     <div class="col">
-                        <div class="content py-5">
+                        <div class="content">
                             <form>
                                 <div class="row mb-3">
-                                  <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
+                                  <label for="inputEmail3" class="col-sm-2 col-form-label fw-semibold">Nome</label>
                                   <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail3">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="pc">
                                   </div>
                                 </div>
                                 <div class="row mb-3">
-                                  <label for="inputPassword3" class="col-sm-2 col-form-label">Prezzo</label>
+                                  <label for="inputPassword3" class="col-sm-2 col-form-label fw-semibold">Prezzo</label>
                                   <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword3">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="99.99 &euro;">
                                   </div>
                                 </div>
+                                <!-- form select -->
                                 <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Prezzo</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>-- seleziona --</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label fw-semibold">Marca</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select fw-semibold" aria-label="Default select example">
+                                            <option selected>-- seleziona --</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+                                    </div>
                                 </div>
-                                
+                                <!-- // form select -->
                             
                                 <div class="input-group py-3">
                                     <textarea class="form-control" aria-label="With textarea" placeholder="Inserisci la descrizione del prodotto, massimo 1000"></textarea>
                                 </div>
-                                <div class="input-group mb-3">
-                                    <input type="file" class="form-control" id="inputGroupFile02">
-                                    <label class="input-group-text" for="inputGroupFile02">Immagine</label>
+                                <div class="input-group">
+                                    <input type="file" class="form-control fw-semibold" id="inputGroupFile02">
+                                    <label class="input-group-text fw-semibold" for="inputGroupFile02">Immagine</label>
                                 </div>
-                                <div class="btn-group py-3" role="group" aria-label="Basic outlined example">
+                                <div class="btn-group py-4" role="group" aria-label="Basic outlined example">
                                     <button type="button" class="btn btn-outline-secondary">Disponibile</button>
                                     <button type="button" class="btn btn-outline-secondary">Esaurito</button>
                                     <button type="button" class="btn btn-outline-secondary">Fuori porduzione</button>
@@ -130,10 +134,10 @@
                     <!--// form left -->
                     <!-- form right -->
                     <div class="col">
-                        <div class="content py-5">
-                            <div class="form-check border border-bottom-0 mb-0 rounded-top ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
+                        <div class="content">
+                            <div class="form-check border border-bottom-0 mb-0 rounded-top d-flex">
+                                <input class="form-check-input align-self-center" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label p-1" for="flexCheckDefault">
                                     <div class="fw-semibold">primary</div>
                                     <div>secondary</div>
                                 </label>
@@ -145,48 +149,13 @@
                                     <div>secondary</div>
                                 </label>
                             </div>
-                            <div class="form-check border border-bottom-0 mb-0 ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                  <div class="fw-semibold">primary</div>
-                                  <div>secondary</div>
-                                </label>
-                            </div>
-                            <div class="form-check border border-bottom-0 mb-0 ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    <div class="fw-semibold">primary</div>
-                                    <div>secondary</div>
-                                </label>
-                            </div>
-                            <div class="form-check border border-bottom-0 mb-0 ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    <div class="fw-semibold">primary</div>
-                                  <div>secondary</div>
-                                </label>
-                            </div>
-                            <div class="form-check border border-bottom-0 mb-0 ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    <div class="fw-semibold">primary</div>
-                                    <div>secondary</div>
-                                </label>
-                            </div>
-                            <div class="form-check border">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    <div class="fw-semibold">primary</div>
-                                    <div>secondary</div>
-                                </label>
-                            </div>
-                            
+                           
                         </div>
                     </div>
                    
                 </div>
                 <!-- //form right -->
-                <div class="py-3">
+                <div class="py-4">
                     <button type="submit" class="btn btn-primary">Salva</button> 
                 </div>
             </div>
